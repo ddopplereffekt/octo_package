@@ -5,7 +5,10 @@ chex == 0.1.85
 optax == 0.1.5
 tensorflow_probability == 0.23.0
 tensorflow == 2.15.0
-jax == 0.4.20
+# jax == 0.4.20             # contradicts with the recommended pip install command for installing jax after requirements
+# jax[cuda12] == 0.4.20     # this does not work as 0.4.20 does not provide the cuda12 option
+# this is the recommended way of jax installation
+jax[cuda12]                 # uda 12 on the PC and octo is only used by droid for data loading -> newer jax version okay
 distrax == 0.1.5
 flax == 0.7.5
 ml_collections >= 0.1.0

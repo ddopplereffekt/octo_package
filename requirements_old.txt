@@ -1,0 +1,31 @@
+gym >= 0.26
+numpy == 1.24.3
+ml_dtypes == 0.2.0
+chex == 0.1.85
+optax == 0.1.5
+tensorflow_probability == 0.23.0
+tensorflow == 2.15.0
+tensorrt == 8.6.1           # this is already old 10.x available but tensorflow seems to depend on this version
+# jax == 0.4.20             # contradicts with the recommended pip install command for installing jax after requirements
+# jax[cuda12] == 0.4.20     # this does not work as 0.4.20 does not provide the cuda12 option
+# following is the current recommended way of jax installation
+jax[cuda12]                 # uda 12 on the PC and octo is only used by droid for data loading -> newer jax version okay
+distrax == 0.1.5
+flax == 0.7.5
+ml_collections >= 0.1.0
+tqdm >= 4.60.0
+absl-py >= 0.12.0
+scipy >= 1.6.0
+wandb >= 0.12.14
+einops >= 0.6.1
+imageio >= 2.31.1
+moviepy >= 1.0.3
+pre-commit == 3.3.3
+transformers >= 4.34.1
+tensorflow_hub >= 0.14.0
+tensorflow_text >= 2.13.0
+tensorflow_datasets == 4.9.2
+tensorflow_graphics == 2021.12.3
+dlimp @ git+https://github.com/kvablack/dlimp@5edaa4691567873d495633f2708982b42edf1972
+plotly >= 5.16.1
+matplotlib

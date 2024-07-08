@@ -1,4 +1,5 @@
-ml_collections >= 0.1.0
+# ml_collections is no longer active maintained
+ml_collections >= 0.1.1
 tqdm >= 4.60.0
 absl-py >= 0.12.0
 scipy >= 1.6.0
